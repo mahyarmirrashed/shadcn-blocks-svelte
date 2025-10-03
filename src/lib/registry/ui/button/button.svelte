@@ -33,8 +33,8 @@
 
 <script lang="ts">
   import { cn } from "$lib/utils.js";
-  import type { HTMLButtonAttributes } from "svelte/elements";
   import type { Snippet } from "svelte";
+  import type { HTMLButtonAttributes } from "svelte/elements";
 
   let {
     ref = $bindable(null),
