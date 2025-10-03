@@ -21,6 +21,7 @@
     "@sveltejs/kit": "^2.21.5",
     "@sveltejs/vite-plugin-svelte": "^5.1.0",
     "@tailwindcss/vite": "^4.1.10",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "bits-ui": "^2.7.0",
     "clsx": "^2.1.1",
     "eslint": "^9.18.0",
