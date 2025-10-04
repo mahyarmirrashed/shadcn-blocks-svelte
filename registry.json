@@ -1,0 +1,6 @@
+{
+  "$schema": "../sites/docs/static/schema/registry.json",
+  "name": "shadcn-blocks-svelte",
+  "homepage": "https://shadcn.mahyarmirrashed.com",
+  "items": []
+}
