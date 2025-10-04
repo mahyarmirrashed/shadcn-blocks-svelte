@@ -1,1 +1,12 @@
-[]
+[
+	{
+		"name": "complex-component",
+		"title": "Complex Component",
+		"type": "registry:component",
+		"description": "A complex component showing hooks, libs and components.",
+		"registryDependencies": [
+			"card"
+		],
+		"relativeUrl": "complex-component.json"
+	}
+]
