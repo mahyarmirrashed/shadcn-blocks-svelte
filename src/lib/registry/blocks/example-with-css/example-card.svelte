@@ -29,7 +29,7 @@
         <button type="submit" class="login-button"> Sign In </button>
       </div>
       <div class="form-footer">
-        <a href="##" class="forgot-password"> Forgot password? </a>
+        <a href="/" class="forgot-password"> Forgot password? </a>
       </div>
     </form>
   </div>
