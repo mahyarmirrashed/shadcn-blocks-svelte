@@ -1,22 +1,24 @@
 # ShadCN Blocks for Svelte
 
-You can use the `shadcn-svelte` CLI to run your own component registry. Running your own
-component registry allows you to distribute your custom components, hooks, pages, and
-other files to any Svelte project.
+A Svelte port of [ShadCN Blocks](https://www.shadcnblocks.com) by [Rob Austin](https://twitter.com/ausrobdev) — a premium, responsive collection of Tailwind-based UI sections and components originally built for React.
 
-## Getting Started
+This project brings those beautifully designed blocks to the Svelte ecosystem, making it easy to compose landing pages, layouts, and marketing sites with **ready‑to‑use UI components**.
 
-This is a template for creating a custom registry using SvelteKit.
+## Usage
 
-- The template uses a `registry.json` file to define components and their files.
-- The `shadcn-svelte build` command is used to build the registry.
-- The registry items are served as static files under `public/r/[name].json`.
-- Every registry item is compatible with the `shadcn-svelte` CLI.
-- The `card`, `button`, `input`, `label`, `textarea` components here would come from the `shadcn-svelte` registry, but the `stepper` component is a custom `ui` component you can use as a reference for creating and referencing "local" `ui` components.
+The Svelte block registry is hosted at  
+[https://shadcn.mahyarmirrashed.com](https://shadcn.mahyarmirrashed.com)
 
-> [!IMPORTANT]
-> Don't forget to replace the version of `shadcn-svelte` in the `package.json` file with the version you want to use.
+You can install components directly from the registry using the `shadcn-svelte` CLI:
 
-## Documentation
+```sh
+npx shadcn-svelte add https://shadcn.mahyarmirrashed.com/r/navbar1
+```
 
-Visit the [shadcn-svelte documentation](https://shadcn-svelte.com/docs/registry) to view the full documentation.
+Each block comes preconfigured with Tailwind CSS styles and is designed to integrate seamlessly into your Svelte or SvelteKit project.
+
+## Credits
+
+Original design and implementation by [Rob Austin](https://twitter.com/ausrobdev).
+
+Svelte port by [Mahyar Mirrashed](https://github.com/mahyarmirrashed).
