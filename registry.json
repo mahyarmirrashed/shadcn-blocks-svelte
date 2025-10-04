@@ -2,5 +2,36 @@
   "$schema": "../sites/docs/static/schema/registry.json",
   "name": "shadcn-blocks-svelte",
   "homepage": "https://shadcn.mahyarmirrashed.com",
-  "items": []
+  "items": [
+    {
+      "name": "complex-component",
+      "type": "registry:component",
+      "title": "Complex Component",
+      "description": "A complex component showing hooks, libs and components.",
+      "registryDependencies": ["card"],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/complex-component/+page.svelte",
+          "type": "registry:page",
+          "target": "src/routes/pokemon/+page.svelte"
+        },
+        {
+          "path": "src/lib/registry/blocks/complex-component/components/pokemon-card.svelte",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/lib/registry/blocks/complex-component/components/pokemon-image.svelte",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/lib/registry/blocks/complex-component/lib/pokemon.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "src/lib/registry/blocks/complex-component/hooks/use-pokemon.svelte.ts",
+          "type": "registry:hook"
+        }
+      ]
+    }
+  ]
 }
