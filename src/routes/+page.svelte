@@ -3,9 +3,6 @@
   import ExampleForm from "$lib/registry/blocks/example-form/example-form.svelte";
   import ExampleCard from "$lib/registry/blocks/example-with-css/example-card.svelte";
   import HelloWorld from "$lib/registry/blocks/hello-world/hello-world.svelte";
-
-  // This page displays items from the custom registry.
-  // You are free to implement this with your design as needed.
 </script>
 
 <div class="mx-auto flex min-h-svh max-w-3xl flex-col gap-8 px-4 py-8">
