@@ -1,6 +1,7 @@
 <script lang="ts">
   import Community1 from "$lib/registry/blocks/community1/community1.svelte";
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
+  import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Stats8 from "$lib/registry/blocks/stats8/stats8.svelte";
   import Team1 from "$lib/registry/blocks/team1/team1.svelte";
@@ -53,6 +54,14 @@
       and phone, each with icons.
     {/snippet}
     <Contact7 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="list2">
+    {#snippet description()}
+      A component displaying a list of awards with icons, titles, categories,
+      and descriptions. Includes headings and buttons to view details.
+    {/snippet}
+    <List2 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="navbar1">

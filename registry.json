@@ -44,6 +44,28 @@
       }
     },
     {
+      "name": "list2",
+      "type": "registry:component",
+      "title": "List2",
+      "description": "A component displaying a list of awards with icons, titles, categories, and descriptions. Includes headings and buttons to view details.",
+      "dependencies": [
+        "@iconify/svelte"
+      ],
+      "registryDependencies": [
+        "button",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/list2/list2.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "navbar1",
       "type": "registry:component",
       "title": "Navbar1",
