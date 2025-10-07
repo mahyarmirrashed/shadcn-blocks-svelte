@@ -1,5 +1,6 @@
 <script lang="ts">
   import Community1 from "$lib/registry/blocks/community1/community1.svelte";
+  import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Stats8 from "$lib/registry/blocks/stats8/stats8.svelte";
   import BlockDemo from "./block-demo.svelte";
@@ -32,6 +33,14 @@
       and social buttons.
     {/snippet}
     <Community1 />
+  </BlockDemo>
+
+  <BlockDemo name="contact7">
+    {#snippet description()}
+      A contact block with title, description, and 3 columns for email, address,
+      and phone, each with icons.
+    {/snippet}
+    <Contact7 />
   </BlockDemo>
 
   <BlockDemo name="navbar1">

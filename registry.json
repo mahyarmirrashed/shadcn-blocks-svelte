@@ -25,6 +25,25 @@
       }
     },
     {
+      "name": "contact7",
+      "type": "registry:component",
+      "title": "Contact7",
+      "description": "A contact block with title, description, and 3 columns for email, address, and phone, each with icons.",
+      "dependencies": [
+        "@iconify/svelte"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/contact7/contact7.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "navbar1",
       "type": "registry:component",
       "title": "Navbar1",
