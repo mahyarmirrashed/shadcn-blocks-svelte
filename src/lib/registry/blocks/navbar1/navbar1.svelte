@@ -183,7 +183,7 @@
 
 <section class={cn("py-4", className)} {...restProps}>
   <div class="container">
-    <nav class="hidden justify-between lg:flex">
+    <nav class="hidden items-center justify-between lg:flex">
       <div class="flex items-center gap-6">
         <a href={logo.url} class="flex items-center gap-2">
           <img src={logo.src} alt={logo.alt} class="max-h-8 dark:invert" />
