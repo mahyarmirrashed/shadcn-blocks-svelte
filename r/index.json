@@ -1,1 +1,21 @@
-[]
+[
+	{
+		"name": "navbar1",
+		"title": "Navbar1",
+		"type": "registry:component",
+		"description": "A navigational component with dynamic menus, offering desktop and mobile layouts, incorporating icons and accordion features for sub-menus.",
+		"dependencies": [
+			"@lucide/svelte"
+		],
+		"registryDependencies": [
+			"accordion",
+			"button",
+			"navigation-menu",
+			"sheet"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "navbar1.json"
+	}
+]
