@@ -28,17 +28,6 @@
 <main class="mx-auto flex max-w-5xl flex-col gap-8 pt-8 pb-16">
   <BlockDemo>
     {#snippet name()}
-      Navbar1
-    {/snippet}
-    {#snippet description()}
-      A navigational component with dynamic menus, offering desktop and mobile
-      layouts, incorporating icons and accordion features for sub-menus.
-    {/snippet}
-    <Navbar1 class="w-full" />
-  </BlockDemo>
-
-  <BlockDemo>
-    {#snippet name()}
       Community1
     {/snippet}
     {#snippet description()}
@@ -46,6 +35,17 @@
       and social buttons.
     {/snippet}
     <Community1 />
+  </BlockDemo>
+
+  <BlockDemo>
+    {#snippet name()}
+      Navbar1
+    {/snippet}
+    {#snippet description()}
+      A navigational component with dynamic menus, offering desktop and mobile
+      layouts, incorporating icons and accordion features for sub-menus.
+    {/snippet}
+    <Navbar1 class="w-full" />
   </BlockDemo>
 
   <BlockDemo>
