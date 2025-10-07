@@ -3,7 +3,7 @@
   import type { Snippet } from "svelte";
 
   type Props = {
-    name: Snippet;
+    name: string;
     description: Snippet;
   };
 </script>
@@ -14,7 +14,7 @@
 
 <div class="relative flex flex-col gap-4 rounded-lg border p-4">
   <div class="flex flex-col gap-1 pt-1 sm:pl-3">
-    <h2 class="font-medium opacity-80">{@render name()}</h2>
+    <h2 class="font-medium capitalize opacity-80">{name}</h2>
     <h2 class="w-lg text-sm text-muted-foreground">
       {@render description()}
     </h2>

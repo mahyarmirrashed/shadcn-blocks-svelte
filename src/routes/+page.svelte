@@ -26,10 +26,7 @@
 </header>
 
 <main class="mx-auto flex max-w-5xl flex-col gap-8 pt-8 pb-16">
-  <BlockDemo>
-    {#snippet name()}
-      Community1
-    {/snippet}
+  <BlockDemo name="community1">
     {#snippet description()}
       A component featuring a logo, a call-to-action for joining a community,
       and social buttons.
@@ -37,10 +34,7 @@
     <Community1 />
   </BlockDemo>
 
-  <BlockDemo>
-    {#snippet name()}
-      Navbar1
-    {/snippet}
+  <BlockDemo name="navbar1">
     {#snippet description()}
       A navigational component with dynamic menus, offering desktop and mobile
       layouts, incorporating icons and accordion features for sub-menus.
@@ -48,10 +42,7 @@
     <Navbar1 class="w-full" />
   </BlockDemo>
 
-  <BlockDemo>
-    {#snippet name()}
-      Stats8
-    {/snippet}
+  <BlockDemo name="stats8">
     {#snippet description()}
       A stats display component with a heading, description, and link, followed
       by a 4-column layout for statistics.
