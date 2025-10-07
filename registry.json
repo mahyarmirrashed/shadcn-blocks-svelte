@@ -9,7 +9,7 @@
       "title": "Navbar1",
       "description": "A navigational component with dynamic menus, offering desktop and mobile layouts, incorporating icons and accordion features for sub-menus.",
       "dependencies": [
-        "@lucide/svelte"
+        "@iconify/svelte"
       ],
       "registryDependencies": [
         "accordion",

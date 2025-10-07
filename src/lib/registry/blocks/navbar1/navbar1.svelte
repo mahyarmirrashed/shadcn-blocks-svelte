@@ -4,14 +4,14 @@
   import * as NavigationMenu from "$lib/registry/ui/navigation-menu/index.js";
   import * as Sheet from "$lib/registry/ui/sheet/index.js";
   import { cn } from "$lib/utils.js";
-  import { type Icon, Book, Menu, Sunset, Trees, Zap } from "@lucide/svelte";
+  import Icon from "@iconify/svelte";
   import type { HTMLAttributes } from "svelte/elements";
 
   type MenuItem = {
     title: string;
     url: string;
     description?: string;
-    icon?: typeof Icon;
+    icon?: string;
     items?: MenuItem[];
   };
 
@@ -53,26 +53,26 @@
           {
             title: "Blog",
             description: "The latest industry news, updates, and info",
-            icon: Book,
+            icon: "lucide:book",
             url: "#",
           },
           {
             title: "Company",
             description: "Our mission is to innovate and empower the world",
-            icon: Trees,
+            icon: "lucide:trees",
             url: "#",
           },
           {
             title: "Careers",
             description: "Browse job listings and discover our workspace",
-            icon: Sunset,
+            icon: "lucide:sunset",
             url: "#",
           },
           {
             title: "Support",
             description:
               "Get in touch with our support team or visit our community forums",
-            icon: Zap,
+            icon: "lucide:zap",
             url: "#",
           },
         ],
@@ -84,25 +84,25 @@
           {
             title: "Help Center",
             description: "Get all the answers you need right here",
-            icon: Zap,
+            icon: "lucide:zap",
             url: "#",
           },
           {
             title: "Contact Us",
             description: "We are here to help you with any questions you have",
-            icon: Sunset,
+            icon: "lucide:sunset",
             url: "#",
           },
           {
             title: "Status",
             description: "Check the current status of our services and APIs",
-            icon: Trees,
+            icon: "lucide:trees",
             url: "#",
           },
           {
             title: "Terms of Service",
             description: "Our terms and conditions for using our services",
-            icon: Book,
+            icon: "lucide:book",
             url: "#",
           },
         ],
@@ -124,7 +124,9 @@
     class="flex min-w-80 flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-muted hover:text-accent-foreground"
     href={item.url}
   >
-    <div class="text-foreground"><item.icon class="size-5 shrink-0" /></div>
+    <div class="text-foreground">
+      <Icon icon={item.icon ?? ""} class="size-5 shrink-0" />
+    </div>
     <div>
       <div class="text-sm font-semibold">{item.title}</div>
       {#if item.description}
@@ -220,7 +222,7 @@
           <Sheet.Trigger>
             {#snippet children()}
               <Button variant="outline" size="icon">
-                <Menu class="size-4" />
+                <Icon icon="lucide:menu" class="size-4" />
               </Button>
             {/snippet}
           </Sheet.Trigger>
