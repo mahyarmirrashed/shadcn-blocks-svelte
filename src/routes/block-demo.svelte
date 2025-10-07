@@ -1,4 +1,7 @@
 <script lang="ts" module>
+  import type { WithChildren } from "bits-ui";
+  import type { Snippet } from "svelte";
+
   type Props = {
     name: Snippet;
     description: Snippet;
@@ -6,9 +9,6 @@
 </script>
 
 <script lang="ts">
-  import type { WithChildren } from "bits-ui";
-  import type { Snippet } from "svelte";
-
   let { name, description, children }: WithChildren<Props> = $props();
 </script>
 
