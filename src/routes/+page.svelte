@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Community1 from "$lib/registry/blocks/community1/community1.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import BlockDemo from "./block-demo.svelte";
 </script>
@@ -34,5 +35,16 @@
     {/snippet}
 
     <Navbar1 class="w-full" />
+  </BlockDemo>
+
+  <BlockDemo>
+    {#snippet name()}
+      Community1
+    {/snippet}
+    {#snippet description()}
+      A component featuring a logo, a call-to-action for joining a community,
+      and social buttons.
+    {/snippet}
+    <Community1 />
   </BlockDemo>
 </main>

@@ -26,6 +26,27 @@
       "meta": {
         "author": "mahyarmirrashed"
       }
+    },
+    {
+      "name": "community1",
+      "type": "registry:component",
+      "title": "Community1",
+      "description": "A component featuring a logo, a call-to-action for joining a community, and social buttons.",
+      "dependencies": [
+        "@iconify/svelte"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/community1/community1.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
     }
   ]
 }
