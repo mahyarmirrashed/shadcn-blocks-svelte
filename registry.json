@@ -63,6 +63,23 @@
       }
     },
     {
+      "name": "cta11",
+      "type": "registry:component",
+      "title": "Cta11",
+      "description": "A component with heading, description, and up to two buttons, arranged vertically with emphasis styling.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/cta11/cta11.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "faq1",
       "type": "registry:component",
       "title": "Faq1",

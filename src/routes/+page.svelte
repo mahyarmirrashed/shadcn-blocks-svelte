@@ -2,6 +2,7 @@
   import Community1 from "$lib/registry/blocks/community1/community1.svelte";
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
   import Cta10 from "$lib/registry/blocks/cta10/cta10.svelte";
+  import Cta11 from "$lib/registry/blocks/cta11/cta11.svelte";
   import Faq1 from "$lib/registry/blocks/faq1/faq1.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
@@ -66,6 +67,14 @@
       row on larger screens.
     {/snippet}
     <Cta10 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="cta11">
+    {#snippet description()}
+      A component with heading, description, and up to two buttons, arranged
+      vertically with emphasis styling.
+    {/snippet}
+    <Cta11 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="faq1">
