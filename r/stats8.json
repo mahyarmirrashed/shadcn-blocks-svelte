@@ -1,0 +1,23 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "stats8",
+	"title": "Stats8",
+	"type": "registry:component",
+	"description": "A stats display component with a heading, description, and link, followed by a 4-column layout for statistics.",
+	"dependencies": [
+		"@iconify/svelte"
+	],
+	"devDependencies": [
+		"@iconify/svelte@^5.0.2"
+	],
+	"meta": {
+		"author": "mahyarmirrashed"
+	},
+	"files": [
+		{
+			"content": "<script lang=\"ts\" module>\n  import { cn } from \"$UTILS$.js\";\n  import Icon from \"@iconify/svelte\";\n  import type { HTMLAttributes } from \"svelte/elements\";\n\n  type Stats8Props = {\n    heading?: string;\n    description?: string;\n    link?: {\n      text: string;\n      url: string;\n    };\n    stats?: Array<{\n      id: string;\n      value: string;\n      label: string;\n    }>;\n  };\n</script>\n\n<script lang=\"ts\">\n  let {\n    heading = \"Platform performance insights\",\n    description = \"Ensuring stability and scalability for all users\",\n    link = {\n      text: \"Read the full impact report\",\n      url: \"#\",\n    },\n    stats = [\n      {\n        id: \"stat-1\",\n        value: \"250%+\",\n        label: \"average growth in user engagement\",\n      },\n      {\n        id: \"stat-2\",\n        value: \"$2.5m\",\n        label: \"annual savings per enterprise partner\",\n      },\n      {\n        id: \"stat-3\",\n        value: \"200+\",\n        label: \"integrations with top industry platforms\",\n      },\n      {\n        id: \"stat-4\",\n        value: \"99.9%\",\n        label: \"customer satisfaction over the last year\",\n      },\n    ],\n    class: className,\n    ...restProps\n  }: Stats8Props & HTMLAttributes<HTMLElement> = $props();\n</script>\n\n<section class={cn(\"py-32\", className)} {...restProps}>\n  <div class=\"container\">\n    <div class=\"flex flex-col gap-4\">\n      <h2 class=\"text-2xl font-bold md:text-4xl\">{heading}</h2>\n      <p>{description}</p>\n      <a\n        href={link.url}\n        class=\"flex items-center gap-1 font-bold hover:underline\"\n      >\n        {link.text}\n        <Icon icon=\"lucide:arrow-right\" class=\"h-auto w-4\" />\n      </a>\n    </div>\n    <div class=\"mt-14 grid gap-x-5 gap-y-8 md:grid-cols-2 lg:grid-cols-4\">\n      {#each stats as stat (stat.id)}\n        <div class=\"flex flex-col gap-5\">\n          <div class=\"text-6xl font-bold\">{stat.value}</div>\n          <p>{stat.label}</p>\n        </div>\n      {/each}\n    </div>\n  </div>\n</section>\n",
+			"type": "registry:component",
+			"target": "stats8.svelte"
+		}
+	]
+}
