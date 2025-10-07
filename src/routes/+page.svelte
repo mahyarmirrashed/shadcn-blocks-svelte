@@ -1,6 +1,7 @@
 <script lang="ts">
   import Community1 from "$lib/registry/blocks/community1/community1.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
+  import Stats8 from "$lib/registry/blocks/stats8/stats8.svelte";
   import BlockDemo from "./block-demo.svelte";
 </script>
 
@@ -45,5 +46,16 @@
       and social buttons.
     {/snippet}
     <Community1 />
+  </BlockDemo>
+
+  <BlockDemo>
+    {#snippet name()}
+      Stats8
+    {/snippet}
+    {#snippet description()}
+      A stats display component with a heading, description, and link, followed
+      by a 4-column layout for statistics.
+    {/snippet}
+    <Stats8 />
   </BlockDemo>
 </main>

@@ -47,6 +47,25 @@
       "meta": {
         "author": "mahyarmirrashed"
       }
+    },
+    {
+      "name": "stats8",
+      "type": "registry:component",
+      "title": "Stats8",
+      "description": "A stats display component with a heading, description, and link, followed by a 4-column layout for statistics.",
+      "dependencies": [
+        "@iconify/svelte"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/stats8/stats8.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
     }
   ]
 }
