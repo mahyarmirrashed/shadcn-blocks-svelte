@@ -2,5 +2,30 @@
   "$schema": "../sites/docs/static/schema/registry.json",
   "name": "shadcn-blocks-svelte",
   "homepage": "https://shadcn.mahyarmirrashed.com",
-  "items": []
+  "items": [
+    {
+      "name": "navbar1",
+      "type": "registry:component",
+      "title": "Navbar1",
+      "description": "A navigational component with dynamic menus, offering desktop and mobile layouts, incorporating icons and accordion features for sub-menus.",
+      "dependencies": [
+        "@lucide/svelte"
+      ],
+      "registryDependencies": [
+        "accordion",
+        "button",
+        "navigation-menu",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/navbar1/navbar1.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    }
+  ]
 }
