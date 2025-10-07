@@ -5,7 +5,7 @@
 		"type": "registry:component",
 		"description": "A navigational component with dynamic menus, offering desktop and mobile layouts, incorporating icons and accordion features for sub-menus.",
 		"dependencies": [
-			"@lucide/svelte"
+			"@iconify/svelte"
 		],
 		"registryDependencies": [
 			"accordion",
@@ -17,5 +17,21 @@
 			"author": "mahyarmirrashed"
 		},
 		"relativeUrl": "navbar1.json"
+	},
+	{
+		"name": "community1",
+		"title": "Community1",
+		"type": "registry:component",
+		"description": "A component featuring a logo, a call-to-action for joining a community, and social buttons.",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [
+			"button"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "community1.json"
 	}
 ]
