@@ -1,0 +1,27 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "list2",
+	"title": "List2",
+	"type": "registry:component",
+	"description": "A component displaying a list of awards with icons, titles, categories, and descriptions. Includes headings and buttons to view details.",
+	"dependencies": [
+		"@iconify/svelte"
+	],
+	"devDependencies": [
+		"@iconify/svelte@^5.0.2"
+	],
+	"registryDependencies": [
+		"button",
+		"separator"
+	],
+	"meta": {
+		"author": "mahyarmirrashed"
+	},
+	"files": [
+		{
+			"content": "<script lang=\"ts\" module>\n  import { Button } from \"$UI$/button/index.js\";\n  import { Separator } from \"$UI$/separator/index.js\";\n  import { cn } from \"$UTILS$.js\";\n  import Icon from \"@iconify/svelte\";\n  import type { HTMLAttributes } from \"svelte/elements\";\n\n  type ListItem = {\n    icon: string;\n    title: string;\n    category: string;\n    description: string;\n    link: string;\n  };\n\n  type List2Props = {\n    heading?: string;\n    items?: ListItem[];\n  };\n</script>\n\n<script lang=\"ts\">\n  let {\n    heading = \"Our Achievements & Recognition\",\n    items = [\n      {\n        icon: \"lucide:trophy\",\n        title: \"Industry Recognition\",\n        category: \"Achievement\",\n        description: \"Outstanding Performance Award.\",\n        link: \"#\",\n      },\n      {\n        icon: \"lucide:award\",\n        title: \"Excellence Award\",\n        category: \"Recognition\",\n        description: \"Best in Category Winner.\",\n        link: \"#\",\n      },\n      {\n        icon: \"lucide:lightbulb\",\n        title: \"Innovation Prize\",\n        category: \"Technology\",\n        description: \"Breakthrough Solution of the Year.\",\n        link: \"#\",\n      },\n      {\n        icon: \"lucide:heart-handshake\",\n        title: \"Customer Success\",\n        category: \"Service\",\n        description: \"Top-Rated Solution Provider.\",\n        link: \"#\",\n      },\n      {\n        icon: \"lucide:building-2\",\n        title: \"Global Leadership\",\n        category: \"Management\",\n        description: \"Executive Team of the Year.\",\n        link: \"#\",\n      },\n      {\n        icon: \"lucide:leaf\",\n        title: \"Sustainability Impact\",\n        category: \"Environmental\",\n        description: \"Green Initiative Excellence.\",\n        link: \"#\",\n      },\n    ],\n    class: className,\n    ...restProps\n  }: List2Props & HTMLAttributes<HTMLElement> = $props();\n</script>\n\n<section class={cn(\"py-32\", className)} {...restProps}>\n  <div class=\"container px-0 md:px-8\">\n    <h1 class=\"mb-10 px-4 text-3xl font-semibold md:mb-14 md:text-4xl\">\n      {heading}\n    </h1>\n    <div class=\"flex flex-col\">\n      <Separator />\n      {#each items as item}\n        <div class=\"grid items-center gap-4 px-4 py-5 md:grid-cols-4\">\n          <div class=\"order-2 flex items-center gap-2 md:order-none\">\n            <span\n              class=\"flex h-14 w-16 shrink-0 items-center justify-center rounded-md bg-muted\"\n            >\n              <Icon icon={item.icon} class=\"size-6\" />\n            </span>\n            <div class=\"flex flex-col gap-1\">\n              <h3 class=\"font-semibold\">{item.title}</h3>\n              <p class=\"text-sm text-muted-foreground\">\n                {item.category}\n              </p>\n            </div>\n          </div>\n          <p class=\"order-1 text-2xl font-semibold md:order-none md:col-span-2\">\n            {item.description}\n          </p>\n          <Button variant=\"outline\" href={item.link} class=\"ml-auto\">\n            View project\n            <Icon icon=\"lucide:arrow-right\" class=\"size-4\" />\n          </Button>\n        </div>\n        <Separator />\n      {/each}\n    </div>\n  </div>\n</section>\n",
+			"type": "registry:component",
+			"target": "list2.svelte"
+		}
+	]
+}

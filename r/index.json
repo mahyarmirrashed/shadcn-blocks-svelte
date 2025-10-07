@@ -30,6 +30,37 @@
 		"relativeUrl": "contact7.json"
 	},
 	{
+		"name": "cta10",
+		"title": "Cta10",
+		"type": "registry:component",
+		"description": "A call-to-action component with a heading, description, and optional primary and secondary buttons arranged in a single column that becomes a row on larger screens.",
+		"dependencies": [],
+		"registryDependencies": [
+			"button"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "cta10.json"
+	},
+	{
+		"name": "list2",
+		"title": "List2",
+		"type": "registry:component",
+		"description": "A component displaying a list of awards with icons, titles, categories, and descriptions. Includes headings and buttons to view details.",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [
+			"button",
+			"separator"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "list2.json"
+	},
+	{
 		"name": "navbar1",
 		"title": "Navbar1",
 		"type": "registry:component",
@@ -49,6 +80,23 @@
 		"relativeUrl": "navbar1.json"
 	},
 	{
+		"name": "pricing6",
+		"title": "Pricing6",
+		"type": "registry:component",
+		"description": "A pricing component with a heading, description, price, features list, and a call-to-action button. Features 3 groups of listed perks.",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [
+			"button",
+			"separator"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "pricing6.json"
+	},
+	{
 		"name": "stats8",
 		"title": "Stats8",
 		"type": "registry:component",
@@ -61,6 +109,20 @@
 			"author": "mahyarmirrashed"
 		},
 		"relativeUrl": "stats8.json"
+	},
+	{
+		"name": "team1",
+		"title": "Team1",
+		"type": "registry:component",
+		"description": "A team showcase component with a title, subtitle, description, and a grid of member avatars, names, and roles, supporting up to 4 columns.",
+		"dependencies": [],
+		"registryDependencies": [
+			"avatar"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "team1.json"
 	},
 	{
 		"name": "testimonial10",
