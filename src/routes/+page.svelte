@@ -12,14 +12,14 @@
     Registry for Svelte-based ShadCN Blocks
   </h1>
   <p class="text-muted-foreground">
-    A Svelte port of <a
-      href="https://www.shadcnblocks.com"
-      class="font-medium hover:underline">ShadCN Blocks</a
+    Svelte port of <a href="https://www.shadcnblocks.com" class="underline"
+      >ShadCN Blocks</a
     >
     by
-    <a href="https://twitter.com/ausrobdev" class="font-medium hover:underline"
-      >Rob Austin</a
-    >.
+    <a href="https://github.com/mahyarmirrashed" class="underline"
+      >Mahyar Mirrashed</a
+    >, originally by
+    <a href="https://twitter.com/ausrobdev" class="underline">Rob Austin</a>.
   </p>
 </header>
 
