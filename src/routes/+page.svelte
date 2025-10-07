@@ -44,7 +44,7 @@
       A component featuring a logo, a call-to-action for joining a community,
       and social buttons.
     {/snippet}
-    <Community1 />
+    <Community1 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="contact7">
@@ -52,7 +52,7 @@
       A contact block with title, description, and 3 columns for email, address,
       and phone, each with icons.
     {/snippet}
-    <Contact7 />
+    <Contact7 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="navbar1">
@@ -68,7 +68,7 @@
       A stats display component with a heading, description, and link, followed
       by a 4-column layout for statistics.
     {/snippet}
-    <Stats8 />
+    <Stats8 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="team1">
@@ -84,6 +84,6 @@
       A testimonial block with a central quote, author's name, role, and avatar
       in a vertical layout.
     {/snippet}
-    <Testimonial10 />
+    <Testimonial10 class="py-16" />
   </BlockDemo>
 </main>
