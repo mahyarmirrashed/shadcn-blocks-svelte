@@ -3,6 +3,7 @@
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Stats8 from "$lib/registry/blocks/stats8/stats8.svelte";
+  import Testimonial10 from "$lib/registry/blocks/testimonial10/testimonial10.svelte";
   import BlockDemo from "./block-demo.svelte";
 </script>
 
@@ -67,5 +68,13 @@
       by a 4-column layout for statistics.
     {/snippet}
     <Stats8 />
+  </BlockDemo>
+
+  <BlockDemo name="testimonial10">
+    {#snippet description()}
+      A testimonial block with a central quote, author's name, role, and avatar
+      in a vertical layout.
+    {/snippet}
+    <Testimonial10 />
   </BlockDemo>
 </main>

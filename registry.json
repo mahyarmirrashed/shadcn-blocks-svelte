@@ -85,6 +85,25 @@
       "meta": {
         "author": "mahyarmirrashed"
       }
+    },
+    {
+      "name": "testimonial10",
+      "type": "registry:component",
+      "title": "Testimonial10",
+      "description": "A testimonial block with a central quote, author's name, role, and avatar in a vertical layout.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/testimonial10/testimonial10.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
     }
   ]
 }
