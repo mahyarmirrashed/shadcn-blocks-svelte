@@ -3,6 +3,7 @@
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
+  import Pricing6 from "$lib/registry/blocks/pricing6/pricing6.svelte";
   import Stats8 from "$lib/registry/blocks/stats8/stats8.svelte";
   import Team1 from "$lib/registry/blocks/team1/team1.svelte";
   import Testimonial10 from "$lib/registry/blocks/testimonial10/testimonial10.svelte";
@@ -70,6 +71,14 @@
       layouts, incorporating icons and accordion features for sub-menus.
     {/snippet}
     <Navbar1 class="w-full" />
+  </BlockDemo>
+
+  <BlockDemo name="pricing6">
+    {#snippet description()}
+      A pricing component with a heading, description, price, features list, and
+      a call-to-action button. Features 3 groups of listed perks.
+    {/snippet}
+    <Pricing6 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="stats8">
