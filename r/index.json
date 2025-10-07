@@ -44,6 +44,32 @@
 		"relativeUrl": "cta10.json"
 	},
 	{
+		"name": "cta11",
+		"title": "Cta11",
+		"type": "registry:component",
+		"description": "A component with heading, description, and up to two buttons, arranged vertically with emphasis styling.",
+		"dependencies": [],
+		"registryDependencies": [],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "cta11.json"
+	},
+	{
+		"name": "faq1",
+		"title": "Faq1",
+		"type": "registry:component",
+		"description": "An accordion-style FAQ component with a customizable heading and list of questions and answers.",
+		"dependencies": [],
+		"registryDependencies": [
+			"accordion"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "faq1.json"
+	},
+	{
 		"name": "list2",
 		"title": "List2",
 		"type": "registry:component",
