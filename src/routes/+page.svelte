@@ -2,6 +2,7 @@
   import Community1 from "$lib/registry/blocks/community1/community1.svelte";
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
   import Cta10 from "$lib/registry/blocks/cta10/cta10.svelte";
+  import Faq1 from "$lib/registry/blocks/faq1/faq1.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Pricing6 from "$lib/registry/blocks/pricing6/pricing6.svelte";
@@ -65,6 +66,14 @@
       row on larger screens.
     {/snippet}
     <Cta10 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="faq1">
+    {#snippet description()}
+      An accordion-style FAQ component with a customizable heading and list of
+      questions and answers.
+    {/snippet}
+    <Faq1 class="w-full py-16" />
   </BlockDemo>
 
   <BlockDemo name="list2">
