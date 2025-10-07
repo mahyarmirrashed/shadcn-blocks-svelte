@@ -87,6 +87,25 @@
       }
     },
     {
+      "name": "team1",
+      "type": "registry:component",
+      "title": "Team1",
+      "description": "A team showcase component with a title, subtitle, description, and a grid of member avatars, names, and roles, supporting up to 4 columns.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/team1/team1.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "testimonial10",
       "type": "registry:component",
       "title": "Testimonial10",

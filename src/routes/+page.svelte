@@ -3,6 +3,7 @@
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Stats8 from "$lib/registry/blocks/stats8/stats8.svelte";
+  import Team1 from "$lib/registry/blocks/team1/team1.svelte";
   import Testimonial10 from "$lib/registry/blocks/testimonial10/testimonial10.svelte";
   import BlockDemo from "./block-demo.svelte";
 </script>
@@ -68,6 +69,14 @@
       by a 4-column layout for statistics.
     {/snippet}
     <Stats8 />
+  </BlockDemo>
+
+  <BlockDemo name="team1">
+    {#snippet description()}
+      A team showcase component with a title, subtitle, description, and a grid
+      of member avatars, names, and roles, supporting up to 4 columns.
+    {/snippet}
+    <Team1 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="testimonial10">
