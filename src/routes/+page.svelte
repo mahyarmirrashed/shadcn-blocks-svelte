@@ -21,7 +21,7 @@
   </a>
 {/snippet}
 
-<header class="mx-auto flex max-w-3xl flex-col gap-1 py-8">
+<header class="mx-auto flex max-w-3xl flex-col gap-1 py-12">
   <h1 class="text-3xl font-bold tracking-tight">ShadCN Blocks, for Svelte</h1>
   <p class="text-muted-foreground">
     Svelte port of {@render link(
