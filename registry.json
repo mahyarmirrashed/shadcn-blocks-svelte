@@ -44,6 +44,25 @@
       }
     },
     {
+      "name": "cta10",
+      "type": "registry:component",
+      "title": "Cta10",
+      "description": "A call-to-action component with a heading, description, and optional primary and secondary buttons arranged in a single column that becomes a row on larger screens.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/cta10/cta10.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "list2",
       "type": "registry:component",
       "title": "List2",

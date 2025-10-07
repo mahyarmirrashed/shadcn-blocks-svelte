@@ -1,6 +1,7 @@
 <script lang="ts">
   import Community1 from "$lib/registry/blocks/community1/community1.svelte";
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
+  import Cta10 from "$lib/registry/blocks/cta10/cta10.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Pricing6 from "$lib/registry/blocks/pricing6/pricing6.svelte";
@@ -55,6 +56,15 @@
       and phone, each with icons.
     {/snippet}
     <Contact7 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="cta10">
+    {#snippet description()}
+      A call-to-action component with a heading, description, and optional
+      primary and secondary buttons arranged in a single column that becomes a
+      row on larger screens.
+    {/snippet}
+    <Cta10 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="list2">
