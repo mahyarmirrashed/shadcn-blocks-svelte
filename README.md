@@ -1,4 +1,4 @@
-# ShadCN Blocks for Svelte
+# ShadCN Blocks, for Svelte
 
 A Svelte port of [ShadCN Blocks](https://www.shadcnblocks.com) by [Rob Austin](https://twitter.com/ausrobdev) — a premium, responsive collection of Tailwind-based UI sections and components originally built for React.
 
