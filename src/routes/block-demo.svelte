@@ -14,7 +14,7 @@
   let { name, description, children }: WithChildren<Props> = $props();
 </script>
 
-<div class="relative flex flex-col gap-4 rounded-lg border p-4">
+<div class="relative flex flex-col rounded-lg border p-4">
   <div class="flex justify-between">
     <div class="flex flex-col gap-1 pt-1 sm:pl-3">
       <h2 class="font-medium capitalize opacity-80">{name}</h2>
