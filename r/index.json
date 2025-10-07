@@ -16,6 +16,20 @@
 		"relativeUrl": "community1.json"
 	},
 	{
+		"name": "contact7",
+		"title": "Contact7",
+		"type": "registry:component",
+		"description": "A contact block with title, description, and 3 columns for email, address, and phone, each with icons.",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "contact7.json"
+	},
+	{
 		"name": "navbar1",
 		"title": "Navbar1",
 		"type": "registry:component",
