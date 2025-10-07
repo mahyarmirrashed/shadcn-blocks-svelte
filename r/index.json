@@ -61,5 +61,19 @@
 			"author": "mahyarmirrashed"
 		},
 		"relativeUrl": "stats8.json"
+	},
+	{
+		"name": "testimonial10",
+		"title": "Testimonial10",
+		"type": "registry:component",
+		"description": "A testimonial block with a central quote, author's name, role, and avatar in a vertical layout.",
+		"dependencies": [],
+		"registryDependencies": [
+			"avatar"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "testimonial10.json"
 	}
 ]
