@@ -10,19 +10,31 @@
   <title>ShadCN Blocks for Svelte</title>
 </svelte:head>
 
+{#snippet link(href: string, label: string)}
+  <a {href} class="group underline hover:no-underline">
+    <span
+      class="bg-gradient-to-r from-muted-foreground to-muted-foreground bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_1px]"
+    >
+      {label}
+    </span>
+  </a>
+{/snippet}
+
 <header class="mx-auto flex max-w-3xl flex-col gap-1 py-8">
   <h1 class="text-3xl font-bold tracking-tight">
     Registry for Svelte-based ShadCN Blocks
   </h1>
   <p class="text-muted-foreground">
-    Svelte port of <a href="https://www.shadcnblocks.com" class="underline"
-      >ShadCN Blocks</a
-    >
-    by
-    <a href="https://github.com/mahyarmirrashed" class="underline"
-      >Mahyar Mirrashed</a
-    >, originally by
-    <a href="https://twitter.com/ausrobdev" class="underline">Rob Austin</a>.
+    Svelte port of {@render link(
+      "https://www.shadcnblocks.com",
+      "shadcnblocks.com",
+    )} by {@render link(
+      "https://github.com/mahyarmirrashed",
+      "Mahyar Mirrashed",
+    )}, originally by {@render link(
+      "https://twitter.com/ausrobdev",
+      "Rob Austin",
+    )}
   </p>
 </header>
 
