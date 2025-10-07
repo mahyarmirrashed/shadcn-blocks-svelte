@@ -1,68 +1,38 @@
 <script lang="ts">
-  import PokemonPage from "$lib/registry/blocks/complex-component/+page.svelte";
-  import ExampleForm from "$lib/registry/blocks/example-form/example-form.svelte";
-  import ExampleCard from "$lib/registry/blocks/example-with-css/example-card.svelte";
-  import HelloWorld from "$lib/registry/blocks/hello-world/hello-world.svelte";
+  import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
+  import BlockDemo from "./block-demo.svelte";
 </script>
 
-<div class="mx-auto flex min-h-svh max-w-3xl flex-col gap-8 px-4 py-8">
-  <header class="flex flex-col gap-1">
-    <h1 class="text-3xl font-bold tracking-tight">Custom Registry</h1>
-    <p class="text-muted-foreground">
-      A custom registry for distributing code using shadcn-svelte.
-    </p>
-  </header>
-  <main class="flex flex-1 flex-col gap-8">
-    <div
-      class="relative flex min-h-[450px] flex-col gap-4 rounded-lg border p-4"
-    >
-      <div class="flex items-center justify-between">
-        <h2 class="text-sm text-muted-foreground sm:pl-3">
-          A simple hello world component
-        </h2>
-      </div>
-      <div class="relative flex min-h-[400px] items-center justify-center">
-        <HelloWorld />
-      </div>
-    </div>
+<svelte:head>
+  <title>ShadCN Blocks for Svelte</title>
+</svelte:head>
 
-    <div
-      class="relative flex min-h-[450px] flex-col gap-4 rounded-lg border p-4"
+<header class="mx-auto flex max-w-3xl flex-col gap-1 py-8">
+  <h1 class="text-3xl font-bold tracking-tight">
+    Registry for Svelte-based ShadCN Blocks
+  </h1>
+  <p class="text-muted-foreground">
+    A Svelte port of <a
+      href="https://www.shadcnblocks.com"
+      class="font-medium hover:underline">ShadCN Blocks</a
     >
-      <div class="flex items-center justify-between">
-        <h2 class="text-sm text-muted-foreground sm:pl-3">
-          A contact form with Zod validation.
-        </h2>
-      </div>
-      <div class="relative flex min-h-[500px] items-center justify-center">
-        <ExampleForm />
-      </div>
-    </div>
+    by
+    <a href="https://twitter.com/ausrobdev" class="font-medium hover:underline"
+      >Rob Austin</a
+    >.
+  </p>
+</header>
 
-    <div
-      class="relative flex min-h-[450px] flex-col gap-4 rounded-lg border p-4"
-    >
-      <div class="flex items-center justify-between">
-        <h2 class="text-sm text-muted-foreground sm:pl-3">
-          A complex component showing hooks, libs and components.
-        </h2>
-      </div>
-      <div class="relative flex min-h-[400px] items-center justify-center">
-        <PokemonPage />
-      </div>
-    </div>
+<main class="mx-auto flex max-w-5xl flex-col gap-8">
+  <BlockDemo>
+    {#snippet name()}
+      Navbar1
+    {/snippet}
+    {#snippet description()}
+      A navigational component with dynamic menus, offering desktop and mobile
+      layouts, incorporating icons and accordion features for sub-menus.
+    {/snippet}
 
-    <div
-      class="relative flex min-h-[450px] flex-col gap-4 rounded-lg border p-4"
-    >
-      <div class="flex items-center justify-between">
-        <h2 class="text-sm text-muted-foreground sm:pl-3">
-          A login form with a CSS file.
-        </h2>
-      </div>
-      <div class="relative flex min-h-[400px] items-center justify-center">
-        <ExampleCard />
-      </div>
-    </div>
-  </main>
-</div>
+    <Navbar1 class="w-full" />
+  </BlockDemo>
+</main>
