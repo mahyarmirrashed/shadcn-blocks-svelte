@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>ShadCN Blocks for Svelte</title>
+  <title>ShadCN Blocks, for Svelte</title>
 </svelte:head>
 
 {#snippet link(href: string, label: string)}
@@ -21,9 +21,7 @@
 {/snippet}
 
 <header class="mx-auto flex max-w-3xl flex-col gap-1 py-8">
-  <h1 class="text-3xl font-bold tracking-tight">
-    Registry for Svelte-based ShadCN Blocks
-  </h1>
+  <h1 class="text-3xl font-bold tracking-tight">ShadCN Blocks, for Svelte</h1>
   <p class="text-muted-foreground">
     Svelte port of {@render link(
       "https://www.shadcnblocks.com",
