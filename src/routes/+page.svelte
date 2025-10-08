@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Blog7 from "$lib/registry/blocks/blog7/blog7.svelte";
   import Community1 from "$lib/registry/blocks/community1/community1.svelte";
   import Contact7 from "$lib/registry/blocks/contact7/contact7.svelte";
   import Cta10 from "$lib/registry/blocks/cta10/cta10.svelte";
@@ -50,6 +51,14 @@
 </header>
 
 <main class="mx-auto flex max-w-5xl flex-col gap-8 pt-8 pb-16">
+  <BlockDemo name="blog7">
+    {#snippet description()}
+      A blog showcase block with a header, description, and 3-column grid of
+      posts, featuring images, titles, summaries, and read-more links.
+    {/snippet}
+    <Blog7 class="py-16" />
+  </BlockDemo>
+
   <BlockDemo name="community1">
     {#snippet description()}
       A component featuring a logo, a call-to-action for joining a community,

@@ -4,6 +4,29 @@
   "homepage": "https://shadcn.mahyarmirrashed.com",
   "items": [
     {
+      "name": "blog7",
+      "type": "registry:component",
+      "title": "Blog7",
+      "description": "A blog showcase block with a header, description, and 3-column grid of posts, featuring images, titles, summaries, and read-more links.",
+      "dependencies": [
+        "@iconify/svelte"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/blog7/blog7.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "community1",
       "type": "registry:component",
       "title": "Community1",
