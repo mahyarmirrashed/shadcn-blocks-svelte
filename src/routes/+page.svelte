@@ -7,6 +7,7 @@
   import Feature1 from "$lib/registry/blocks/feature1/feature1.svelte";
   import Feature2 from "$lib/registry/blocks/feature2/feature2.svelte";
   import Feature13 from "$lib/registry/blocks/feature13/feature13.svelte";
+  import Feature17 from "$lib/registry/blocks/feature17/feature17.svelte";
   import Feature43 from "$lib/registry/blocks/feature43/feature43.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
@@ -112,6 +113,14 @@
       endpoints in each feature card.
     {/snippet}
     <Feature13 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="feature17">
+    {#snippet description()}
+      A component showcasing 6 core features with icons, using a 2-column grid
+      layout, including a heading and subheading.
+    {/snippet}
+    <Feature17 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="feature43">

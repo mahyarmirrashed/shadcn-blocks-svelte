@@ -154,6 +154,25 @@
       }
     },
     {
+      "name": "feature17",
+      "type": "registry:component",
+      "title": "Feature17",
+      "description": "A component showcasing 6 core features with icons, using a 2-column grid layout, including a heading and subheading.",
+      "dependencies": [
+        "@iconify/svelte"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/feature17/feature17.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "feature43",
       "type": "registry:component",
       "title": "Feature43",
