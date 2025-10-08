@@ -4,6 +4,7 @@
   import Cta10 from "$lib/registry/blocks/cta10/cta10.svelte";
   import Cta11 from "$lib/registry/blocks/cta11/cta11.svelte";
   import Faq1 from "$lib/registry/blocks/faq1/faq1.svelte";
+  import Feature1 from "$lib/registry/blocks/feature1/feature1.svelte";
   import Feature43 from "$lib/registry/blocks/feature43/feature43.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
@@ -84,6 +85,14 @@
       questions and answers.
     {/snippet}
     <Faq1 class="w-full py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="feature1">
+    {#snippet description()}
+      A block with a 2-column layout featuring a title, description, two
+      buttons, and an image.
+    {/snippet}
+    <Feature1 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="feature43">

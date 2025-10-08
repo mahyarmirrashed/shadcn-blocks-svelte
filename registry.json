@@ -99,6 +99,25 @@
       }
     },
     {
+      "name": "feature1",
+      "type": "registry:component",
+      "title": "Feature1",
+      "description": "A block with a 2-column layout featuring a title, description, two buttons, and an image.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/feature1/feature1.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "feature43",
       "type": "registry:component",
       "title": "Feature43",
