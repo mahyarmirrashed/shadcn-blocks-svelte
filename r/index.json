@@ -73,7 +73,7 @@
 		"name": "feature1",
 		"title": "Feature1",
 		"type": "registry:component",
-		"description": "A block with a 2-column layout featuring a title, description, two buttons, and an image.",
+		"description": "A block with a 2-column layout featuring a title, description, two buttons, and an image on the right.",
 		"dependencies": [],
 		"registryDependencies": [
 			"button"
@@ -82,6 +82,20 @@
 			"author": "mahyarmirrashed"
 		},
 		"relativeUrl": "feature1.json"
+	},
+	{
+		"name": "feature2",
+		"title": "Feature2",
+		"type": "registry:component",
+		"description": "A block with a 2-column layout featuring a title, description, two buttons, and an image on the left.",
+		"dependencies": [],
+		"registryDependencies": [
+			"button"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "feature2.json"
 	},
 	{
 		"name": "feature13",
@@ -94,6 +108,20 @@
 			"author": "mahyarmirrashed"
 		},
 		"relativeUrl": "feature13.json"
+	},
+	{
+		"name": "feature17",
+		"title": "Feature17",
+		"type": "registry:component",
+		"description": "A component showcasing 6 core features with icons, using a 2-column grid layout, including a heading and subheading.",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "feature17.json"
 	},
 	{
 		"name": "feature43",

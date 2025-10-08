@@ -3,7 +3,7 @@
 	"name": "feature1",
 	"title": "Feature1",
 	"type": "registry:component",
-	"description": "A block with a 2-column layout featuring a title, description, two buttons, and an image.",
+	"description": "A block with a 2-column layout featuring a title, description, two buttons, and an image on the right.",
 	"registryDependencies": [
 		"button"
 	],
