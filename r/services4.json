@@ -1,0 +1,23 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "services4",
+	"title": "Services4",
+	"type": "registry:component",
+	"description": "A component displaying services in a 2-column grid, detailing 4 services with icons, titles, descriptions, and bullet points. Features hover effects and a central header.",
+	"dependencies": [
+		"@iconify/svelte"
+	],
+	"devDependencies": [
+		"@iconify/svelte@^5.0.2"
+	],
+	"meta": {
+		"author": "mahyarmirrashed"
+	},
+	"files": [
+		{
+			"content": "<script lang=\"ts\" module>\n  import { cn } from \"$UTILS$.js\";\n  import Icon from \"@iconify/svelte\";\n  import type { HTMLAttributes } from \"svelte/elements\";\n\n  type Service = {\n    title: string;\n    description: string;\n    items: string[];\n    icon: string;\n  };\n\n  type Services4Props = { services?: Service[] };\n</script>\n\n<script lang=\"ts\">\n  let {\n    services = [\n      {\n        title: \"Product Strategy\",\n        description:\n          \"Strategic planning and market positioning to ensure your product meets user needs and business goals.\",\n        items: [\"Market Research\", \"User Personas\", \"Competitive Analysis\"],\n        icon: \"lucide:cog\",\n      },\n      {\n        title: \"Design\",\n        description:\n          \"Beautiful, user-centered designs that create engaging experiences across all platforms.\",\n        items: [\"UI/UX Design\", \"Prototyping\", \"Interaction Design\"],\n        icon: \"lucide:pen-tool\",\n      },\n      {\n        title: \"Web Development\",\n        description:\n          \"Modern, scalable web applications built with the latest technologies and best practices.\",\n        items: [\"Frontend Dev\", \"Backend Dev\", \"API Integration\"],\n        icon: \"lucide:code\",\n      },\n      {\n        title: \"Marketing\",\n        description:\n          \"Data-driven strategies to launch successfully and scale your product efficiently.\",\n        items: [\"SEO Strategy\", \"Analytics & Data\", \"A/B Testing\"],\n        icon: \"lucide:shrub\",\n      },\n    ],\n    class: className,\n    ...restProps\n  }: Services4Props & HTMLAttributes<HTMLElement> = $props();\n</script>\n\n<section class={cn(\"py-32\", className)} {...restProps}>\n  <div class=\"container\">\n    <div class=\"mx-auto max-w-6xl space-y-12\">\n      <div class=\"space-y-4 text-center\">\n        <h2 class=\"text-3xl font-semibold tracking-tight md:text-4xl\">\n          Services\n        </h2>\n        <p\n          class=\"mx-auto max-w-2xl text-lg tracking-tight text-muted-foreground md:text-xl\"\n        >\n          We craft digital experiences that captivate and convert, bringing your\n          vision to life.\n        </p>\n      </div>\n\n      <div class=\"grid grid-cols-1 gap-8 md:grid-cols-2\">\n        {#each services as service}\n          <div\n            class=\"space-y-6 rounded-lg border border-border p-8 transition-shadow hover:shadow-sm\"\n          >\n            <div class=\"flex items-center gap-4\">\n              <div class=\"rounded-full bg-muted p-3\">\n                <Icon icon={service.icon} class=\"size-6\" />\n              </div>\n              <h3 class=\"text-xl font-semibold\">{service.title}</h3>\n            </div>\n            <p class=\"leading-relaxed text-muted-foreground\">\n              {service.description}\n            </p>\n            <div class=\"space-y-2\">\n              {#each service.items as item}\n                <div class=\"flex items-center gap-2\">\n                  <div class=\"h-1.5 w-1.5 rounded-full bg-foreground\"></div>\n                  <span class=\"text-sm font-medium\">{item}</span>\n                </div>\n              {/each}\n            </div>\n          </div>\n        {/each}\n      </div>\n    </div>\n  </div>\n</section>\n",
+			"type": "registry:component",
+			"target": "services4.svelte"
+		}
+	]
+}

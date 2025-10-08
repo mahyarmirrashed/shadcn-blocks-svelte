@@ -1,5 +1,23 @@
 [
 	{
+		"name": "blog7",
+		"title": "Blog7",
+		"type": "registry:component",
+		"description": "A blog showcase block with a header, description, and 3-column grid of posts, featuring images, titles, summaries, and read-more links.",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [
+			"badge",
+			"button",
+			"card"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "blog7.json"
+	},
+	{
 		"name": "community1",
 		"title": "Community1",
 		"type": "registry:component",
@@ -189,6 +207,20 @@
 			"author": "mahyarmirrashed"
 		},
 		"relativeUrl": "pricing6.json"
+	},
+	{
+		"name": "services4",
+		"title": "Services4",
+		"type": "registry:component",
+		"description": "A component displaying services in a 2-column grid, detailing 4 services with icons, titles, descriptions, and bullet points. Features hover effects and a central header.",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "services4.json"
 	},
 	{
 		"name": "stats8",
