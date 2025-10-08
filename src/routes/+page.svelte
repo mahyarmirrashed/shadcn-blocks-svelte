@@ -4,6 +4,7 @@
   import Cta10 from "$lib/registry/blocks/cta10/cta10.svelte";
   import Cta11 from "$lib/registry/blocks/cta11/cta11.svelte";
   import Faq1 from "$lib/registry/blocks/faq1/faq1.svelte";
+  import Feature43 from "$lib/registry/blocks/feature43/feature43.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Pricing6 from "$lib/registry/blocks/pricing6/pricing6.svelte";
@@ -83,6 +84,14 @@
       questions and answers.
     {/snippet}
     <Faq1 class="w-full py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="feature43">
+    {#snippet description()}
+      A component showcasing 6 reasons with icons, titles, and descriptions in a
+      3-column grid for "Why Work With Us?".
+    {/snippet}
+    <Feature43 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="list2">
