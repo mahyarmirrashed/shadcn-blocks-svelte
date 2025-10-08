@@ -92,7 +92,7 @@
   <BlockDemo name="feature1">
     {#snippet description()}
       A block with a 2-column layout featuring a title, description, two
-      buttons, and an image.
+      buttons, and an image on the right.
     {/snippet}
     <Feature1 class="py-16" />
   </BlockDemo>
