@@ -12,6 +12,7 @@
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
   import Pricing6 from "$lib/registry/blocks/pricing6/pricing6.svelte";
+  import Services4 from "$lib/registry/blocks/services4/services4.svelte";
   import Stats8 from "$lib/registry/blocks/stats8/stats8.svelte";
   import Team1 from "$lib/registry/blocks/team1/team1.svelte";
   import Testimonial10 from "$lib/registry/blocks/testimonial10/testimonial10.svelte";
@@ -153,6 +154,15 @@
       a call-to-action button. Features 3 groups of listed perks.
     {/snippet}
     <Pricing6 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="services4">
+    {#snippet description()}
+      A component displaying services in a 2-column grid, detailing 4 services
+      with icons, titles, descriptions, and bullet points. Features hover
+      effects and a central header.
+    {/snippet}
+    <Services4 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="stats8">

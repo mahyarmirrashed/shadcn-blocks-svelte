@@ -260,6 +260,25 @@
       }
     },
     {
+      "name": "services4",
+      "type": "registry:component",
+      "title": "Services4",
+      "description": "A component displaying services in a 2-column grid, detailing 4 services with icons, titles, descriptions, and bullet points. Features hover effects and a central header.",
+      "dependencies": [
+        "@iconify/svelte"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "src/lib/registry/blocks/services4/services4.svelte",
+          "type": "registry:component"
+        }
+      ],
+      "meta": {
+        "author": "mahyarmirrashed"
+      }
+    },
+    {
       "name": "stats8",
       "type": "registry:component",
       "title": "Stats8",
