@@ -5,6 +5,7 @@
   import Cta11 from "$lib/registry/blocks/cta11/cta11.svelte";
   import Faq1 from "$lib/registry/blocks/faq1/faq1.svelte";
   import Feature1 from "$lib/registry/blocks/feature1/feature1.svelte";
+  import Feature13 from "$lib/registry/blocks/feature13/feature13.svelte";
   import Feature43 from "$lib/registry/blocks/feature43/feature43.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
   import Navbar1 from "$lib/registry/blocks/navbar1/navbar1.svelte";
@@ -93,6 +94,15 @@
       buttons, and an image.
     {/snippet}
     <Feature1 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="feature13">
+    {#snippet description()}
+      A component showcases a heading and 2-column layout of features with
+      title, subtitle, description, and image. Unique for using images as visual
+      endpoints in each feature card.
+    {/snippet}
+    <Feature13 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="feature43">
