@@ -5,6 +5,7 @@
   import Cta11 from "$lib/registry/blocks/cta11/cta11.svelte";
   import Faq1 from "$lib/registry/blocks/faq1/faq1.svelte";
   import Feature1 from "$lib/registry/blocks/feature1/feature1.svelte";
+  import Feature2 from "$lib/registry/blocks/feature2/feature2.svelte";
   import Feature13 from "$lib/registry/blocks/feature13/feature13.svelte";
   import Feature43 from "$lib/registry/blocks/feature43/feature43.svelte";
   import List2 from "$lib/registry/blocks/list2/list2.svelte";
@@ -94,6 +95,14 @@
       buttons, and an image.
     {/snippet}
     <Feature1 class="py-16" />
+  </BlockDemo>
+
+  <BlockDemo name="feature2">
+    {#snippet description()}
+      A block with a 2-column layout featuring a title, description, two
+      buttons, and an image on the left.
+    {/snippet}
+    <Feature2 class="py-16" />
   </BlockDemo>
 
   <BlockDemo name="feature13">
