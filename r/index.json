@@ -70,6 +70,46 @@
 		"relativeUrl": "faq1.json"
 	},
 	{
+		"name": "feature1",
+		"title": "Feature1",
+		"type": "registry:component",
+		"description": "A block with a 2-column layout featuring a title, description, two buttons, and an image.",
+		"dependencies": [],
+		"registryDependencies": [
+			"button"
+		],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "feature1.json"
+	},
+	{
+		"name": "feature13",
+		"title": "Feature13",
+		"type": "registry:component",
+		"description": "A component showcases a heading and 2-column layout of features with title, subtitle, description, and image. Unique for using images as visual endpoints in each feature card.",
+		"dependencies": [],
+		"registryDependencies": [],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "feature13.json"
+	},
+	{
+		"name": "feature43",
+		"title": "Feature43",
+		"type": "registry:component",
+		"description": "A component showcasing 6 reasons with icons, titles, and descriptions in a 3-column grid for \"Why Work With Us?\".",
+		"dependencies": [
+			"@iconify/svelte"
+		],
+		"registryDependencies": [],
+		"meta": {
+			"author": "mahyarmirrashed"
+		},
+		"relativeUrl": "feature43.json"
+	},
+	{
 		"name": "list2",
 		"title": "List2",
 		"type": "registry:component",

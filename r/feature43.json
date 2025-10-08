@@ -1,0 +1,23 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "feature43",
+	"title": "Feature43",
+	"type": "registry:component",
+	"description": "A component showcasing 6 reasons with icons, titles, and descriptions in a 3-column grid for \"Why Work With Us?\".",
+	"dependencies": [
+		"@iconify/svelte"
+	],
+	"devDependencies": [
+		"@iconify/svelte@^5.0.2"
+	],
+	"meta": {
+		"author": "mahyarmirrashed"
+	},
+	"files": [
+		{
+			"content": "<script lang=\"ts\" module>\n  import { cn } from \"$UTILS$.js\";\n  import Icon from \"@iconify/svelte\";\n  import type { HTMLAttributes } from \"svelte/elements\";\n\n  type Reason = {\n    title: string;\n    description: string;\n    icon: string;\n  };\n\n  type Feature43Props = {\n    heading?: string;\n    reasons?: Reason[];\n  };\n</script>\n\n<script lang=\"ts\">\n  let {\n    heading = \"Why Work With Us?\",\n    reasons = [\n      {\n        title: \"Quality\",\n        description:\n          \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?\",\n        icon: \"lucide:git-pull-request\",\n      },\n      {\n        title: \"Experience\",\n        description:\n          \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?\",\n        icon: \"lucide:square-kanban\",\n      },\n      {\n        title: \"Support\",\n        description:\n          \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?\",\n        icon: \"lucide:radio-tower\",\n      },\n      {\n        title: \"Innovation\",\n        description:\n          \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?\",\n        icon: \"lucide:wand-sparkles\",\n      },\n      {\n        title: \"Results\",\n        description:\n          \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?\",\n        icon: \"lucide:layers\",\n      },\n      {\n        title: \"Efficiency\",\n        description:\n          \"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?\",\n        icon: \"lucide:battery-charging\",\n      },\n    ],\n    class: className,\n    ...restProps\n  }: Feature43Props & HTMLAttributes<HTMLElement> = $props();\n</script>\n\n<section class={cn(\"py-32\", className)} {...restProps}>\n  <div class=\"container\">\n    <div class=\"mb-10 md:mb-20\">\n      <h2 class=\"mb-2 text-center text-3xl font-semibold lg:text-5xl\">\n        {heading}\n      </h2>\n    </div>\n    <div class=\"grid gap-10 md:grid-cols-2 lg:grid-cols-3\">\n      {#each reasons as reason}\n        <div class=\"flex flex-col\">\n          <div\n            class=\"mb-5 flex size-16 items-center justify-center rounded-full bg-accent\"\n          >\n            <Icon icon={reason.icon} class=\"size-6\" />\n          </div>\n          <h3 class=\"mb-2 text-xl font-semibold\">{reason.title}</h3>\n          <p class=\"text-muted-foreground\">{reason.description}</p>\n        </div>\n      {/each}\n    </div>\n  </div>\n</section>\n",
+			"type": "registry:component",
+			"target": "feature43.svelte"
+		}
+	]
+}
