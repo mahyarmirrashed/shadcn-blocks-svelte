@@ -8,7 +8,7 @@
     answer: string;
   };
 
-  type Faq1Props = {
+  export type Faq1Props = {
     heading?: string;
     items?: FaqItem[];
   };

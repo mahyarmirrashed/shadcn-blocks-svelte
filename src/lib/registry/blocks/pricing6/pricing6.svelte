@@ -5,7 +5,7 @@
   import Icon from "@iconify/svelte";
   import type { HTMLAttributes } from "svelte/elements";
 
-  type Pricing6Props = {
+  export type Pricing6Props = {
     heading?: string;
     description?: string;
     price?: string | number;

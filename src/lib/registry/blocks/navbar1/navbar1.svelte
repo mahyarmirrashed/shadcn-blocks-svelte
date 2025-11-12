@@ -15,7 +15,7 @@
     items?: MenuItem[];
   };
 
-  type Navbar1Props = {
+  export type Navbar1Props = {
     logo?: {
       url: string;
       src: string;

@@ -9,7 +9,7 @@
     icon: string;
   };
 
-  type Feature17Props = {
+  export type Feature17Props = {
     heading?: string;
     subheading?: string;
     features?: Feature[];

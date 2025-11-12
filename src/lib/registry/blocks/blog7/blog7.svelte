@@ -15,7 +15,7 @@
     image: { src: string; alt: string };
   };
 
-  type Cta11Props = {
+  export type Blog7Props = {
     tagline?: string;
     heading?: string;
     description?: string;
@@ -76,7 +76,7 @@
     ],
     class: className,
     ...restProps
-  }: Cta11Props & HTMLAttributes<HTMLElement> = $props();
+  }: Blog7Props & HTMLAttributes<HTMLElement> = $props();
 </script>
 
 <section class={cn("py-32", className)} {...restProps}>

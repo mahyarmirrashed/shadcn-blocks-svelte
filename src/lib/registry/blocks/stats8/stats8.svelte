@@ -3,7 +3,7 @@
   import Icon from "@iconify/svelte";
   import type { HTMLAttributes } from "svelte/elements";
 
-  type Stats8Props = {
+  export type Stats8Props = {
     heading?: string;
     description?: string;
     link?: {

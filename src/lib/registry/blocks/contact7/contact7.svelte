@@ -3,7 +3,7 @@
   import Icon from "@iconify/svelte";
   import type { HTMLAttributes } from "svelte/elements";
 
-  type Contact7Props = {
+  export type Contact7Props = {
     title?: string;
     description?: string;
     emailLabel?: string;

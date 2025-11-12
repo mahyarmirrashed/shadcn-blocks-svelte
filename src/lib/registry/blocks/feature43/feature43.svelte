@@ -9,7 +9,7 @@
     icon: string;
   };
 
-  type Feature43Props = {
+  export type Feature43Props = {
     heading?: string;
     reasons?: Reason[];
   };

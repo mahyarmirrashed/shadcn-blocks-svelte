@@ -3,7 +3,7 @@
   import { cn } from "$lib/utils.js";
   import type { HTMLAttributes } from "svelte/elements";
 
-  type Testimonial10Props = {
+  export type Testimonial10Props = {
     quote?: string;
     author?: {
       name: string;

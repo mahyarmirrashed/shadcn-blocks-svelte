@@ -3,7 +3,7 @@
   import { cn } from "$lib/utils.js";
   import type { HTMLAttributes } from "svelte/elements";
 
-  type Feature2Props = {
+  export type Feature2Props = {
     title?: string;
     description?: string;
     image?: { src: string; alt: string };

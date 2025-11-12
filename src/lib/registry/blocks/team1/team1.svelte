@@ -10,7 +10,7 @@
     avatar: string;
   };
 
-  type Team1Props = {
+  export type Team1Props = {
     heading?: string;
     subheading?: string;
     description?: string;

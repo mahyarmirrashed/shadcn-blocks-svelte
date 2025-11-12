@@ -10,7 +10,7 @@
     icon: string;
   };
 
-  type Services4Props = { services?: Service[] };
+  export type Services4Props = { services?: Service[] };
 </script>
 
 <script lang="ts">

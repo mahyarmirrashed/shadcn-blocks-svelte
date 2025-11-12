@@ -3,7 +3,7 @@
   import { cn } from "$lib/utils.js";
   import type { HTMLAttributes } from "svelte/elements";
 
-  type Cta10Props = {
+  export type Cta10Props = {
     heading?: string;
     description?: string;
     buttons?: {

@@ -9,7 +9,7 @@
     icon: string;
   };
 
-  type Community1Props = {
+  export type Community1Props = {
     logo?: {
       src: string;
       alt: string;

@@ -13,7 +13,7 @@
     link: string;
   };
 
-  type List2Props = {
+  export type List2Props = {
     heading?: string;
     items?: ListItem[];
   };

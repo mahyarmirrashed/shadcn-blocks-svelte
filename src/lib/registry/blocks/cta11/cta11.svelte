@@ -2,7 +2,7 @@
   import { cn } from "$lib/utils.js";
   import type { HTMLAttributes } from "svelte/elements";
 
-  type Cta11Props = {
+  export type Cta11Props = {
     heading?: string;
     description?: string;
     image?: { src: string; alt: string };

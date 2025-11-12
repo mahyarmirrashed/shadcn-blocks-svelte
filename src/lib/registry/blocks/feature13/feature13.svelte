@@ -10,7 +10,7 @@
     image: string;
   };
 
-  type Feature13Props = {
+  export type Feature13Props = {
     heading?: string;
     features?: Feature[];
   };
